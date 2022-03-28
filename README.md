@@ -15,6 +15,7 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ```
 cd existing_repo
+git remote add origin https://gitlab.com/diego.aws.dev.stm/di-motociclo.git
 git remote add origin https://gitlab.com/d8179/di-motociclo-back.git
 git branch -M main
 git push -uf origin main
@@ -22,6 +23,7 @@ git push -uf origin main
 
 ## Integrate with your tools
 
+- [ ] [Set up project integrations](https://gitlab.com/diego.aws.dev.stm/di-motociclo/-/settings/integrations)
 - [ ] [Set up project integrations](https://gitlab.com/d8179/di-motociclo-back/-/settings/integrations)
 
 ## Collaborate with your team
