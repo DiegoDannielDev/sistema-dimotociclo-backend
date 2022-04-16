@@ -1,4 +1,4 @@
-package br.com.projeto.dimotociclo.adapters.config;
+package br.com.projeto.dimotociclo.adapters.adapters.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

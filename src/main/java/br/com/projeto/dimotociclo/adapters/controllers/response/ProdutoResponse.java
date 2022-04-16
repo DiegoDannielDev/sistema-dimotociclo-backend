@@ -1,6 +1,6 @@
-package br.com.projeto.dimotociclo.adapters.controllers.response;
+package br.com.projeto.dimotociclo.adapters.adapters.controllers.response;
 
-import br.com.projeto.dimotociclo.adapters.core.impl.model.ProdutoModel;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.databind.PropertyNamingStrategy.SnakeCaseStrategy;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import lombok.AllArgsConstructor;
@@ -14,6 +14,7 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @Getter
 @Builder
+@JsonTypeName("data")
 @JsonNaming(value = SnakeCaseStrategy.class)
 public class ProdutoResponse {
 
@@ -22,12 +23,5 @@ public class ProdutoResponse {
   private BigDecimal quantidadeEntrada;
   private float valorEntrada;
 
-  public static ProdutoResponse fromResponse(ProdutoModel produtoModel) {
-    return ProdutoResponse.builder()
-            .idProduto(produtoModel.getIdProduto())
-            .descricaoProduto(produtoModel.getDescricaoProduto())
-            .quantidadeEntrada(produtoModel.getQuantidadeEntrada())
-            .valorEntrada(produtoModel.getValorEntrada())
-            .build();
-  }
+
 }
