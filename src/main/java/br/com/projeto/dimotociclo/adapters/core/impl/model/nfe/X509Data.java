@@ -1,14 +1,13 @@
 package br.com.projeto.dimotociclo.adapters.core.impl.model.nfe;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
-@NoArgsConstructor
-@AllArgsConstructor
+import java.io.Serializable;
+
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class CanonicalizationMethod {
-  public String _Algorithm;
+public class X509Data implements Serializable {
+  @JsonIgnoreProperties("X509Certificate")
+  public String x509Certificate;
 }

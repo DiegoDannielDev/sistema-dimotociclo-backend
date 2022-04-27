@@ -1,4 +1,4 @@
-package br.com.projeto.dimotociclo.adapters.adapters.controllers.response;
+package br.com.projeto.dimotociclo.adapters.controllers.response;
 
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.databind.PropertyNamingStrategy.SnakeCaseStrategy;

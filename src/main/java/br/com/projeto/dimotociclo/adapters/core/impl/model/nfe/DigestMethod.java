@@ -1,19 +1,14 @@
 package br.com.projeto.dimotociclo.adapters.core.impl.model.nfe;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@Builder
-public class dest {
-	public double CNPJ;
-	public String xNome;
-	public enderDest enderDest;
-	public int indIEDest;
-	public int IE;
-	public String email;
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class DigestMethod {
+  public String _Algorithm;
 }

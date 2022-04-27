@@ -10,7 +10,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class COFINS {
-  @JsonProperty("COFINSAliq")
-  public COFINSAliq cOFINSAliq;
+public class NFe {
+  public InfNFe infNFe;
+
+  @JsonProperty("Signature")
+  public Signature signature;
+
+  public String _xmlns;
 }

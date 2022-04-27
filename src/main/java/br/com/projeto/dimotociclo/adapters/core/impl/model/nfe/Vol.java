@@ -1,7 +1,6 @@
 package br.com.projeto.dimotociclo.adapters.core.impl.model.nfe;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,7 +9,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class COFINS {
-  @JsonProperty("COFINSAliq")
-  public COFINSAliq cOFINSAliq;
+public class Vol {
+  public String qVol;
+  public String nVol;
+  public String pesoL;
+  public String pesoB;
 }

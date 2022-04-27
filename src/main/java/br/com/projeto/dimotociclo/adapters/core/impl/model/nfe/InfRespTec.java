@@ -10,7 +10,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class COFINS {
-  @JsonProperty("COFINSAliq")
-  public COFINSAliq cOFINSAliq;
+public class InfRespTec {
+  @JsonProperty("CNPJ")
+  public String cNPJ;
+
+  public String xContato;
+  public String email;
+  public String fone;
 }

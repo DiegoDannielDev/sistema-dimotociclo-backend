@@ -1,7 +1,7 @@
 package br.com.projeto.dimotociclo.adapters.core.impl.mappers;
 
 import br.com.projeto.dimotociclo.adapters.adapters.controllers.request.ProdutoRequest;
-import br.com.projeto.dimotociclo.adapters.adapters.controllers.response.ProdutoResponse;
+import br.com.projeto.dimotociclo.adapters.controllers.response.ProdutoResponse;
 import br.com.projeto.dimotociclo.adapters.core.impl.model.ProdutoModel;
 
 import java.util.Collections;
