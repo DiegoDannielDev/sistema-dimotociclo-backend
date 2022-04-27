@@ -1,0 +1,21 @@
+version: '3.6'
+services:
+  sysvendas:
+    image: mysql
+    container_name: dev_sisvendas
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_USER: 'root'
+      MYSQL_ROOT_PASSWORD: 'root'
+      MYSQL_DATABASE: sisvendas
+    ports:
+      - '3306-3307'
+    networks:
+      - mysql
+    volumes:
+      - mysql-dimotociclo-volumes:/var/lib/mysqldimotociclo
+networks:
+  mysql:
+    driver: bridge
+volumes:
+  mysql-dimotociclo-volumes:

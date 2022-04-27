@@ -16,5 +16,6 @@ public class NFe {
   @JsonProperty("Signature")
   public Signature signature;
 
+  @JsonIgnoreProperties("_xmlns")
   public String _xmlns;
 }

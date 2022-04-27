@@ -1,14 +1,14 @@
 package br.com.projeto.dimotociclo.adapters.jpa.entity;
 
-import br.com.projeto.dimotociclo.adapters.core.impl.model.ProdutoModel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
-import java.math.BigDecimal;
-
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -21,19 +21,25 @@ public class ProdutoEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(name = "descricao_produto")
-    private String descricaoProduto;
-    @Column(name = "quantidade_entrada")
-    private BigDecimal quantidadeEntrada;
-    @Column(name = "valor_entrada")
-    private float valorEntrada;
 
-
-    public static ProdutoEntity fromResponse(ProdutoModel produtoModel) {
-        return ProdutoEntity.builder()
-                .descricaoProduto(produtoModel.getDescricaoProduto())
-                .quantidadeEntrada(produtoModel.getQuantidadeEntrada())
-                .valorEntrada(produtoModel.getValorEntrada())
-                .build();
-    }
+  public String cProd;
+  public String cEAN;
+  public String xProd;
+  public String nCM;
+  public String cFOP;
+  public String uCom;
+  public String qCom;
+  public String vUnCom;
+  public String vProd;
+  public String cEANTrib;
+  public String uTrib;
+  public String qTrib;
+  public String vUnTrib;
+  public String vFrete;
+  public String indTot;
+  public String xPed;
+  public String nItemPed;
+  public String cEST;
+  public String indEscala;
+  public String eXTIPI;
 }

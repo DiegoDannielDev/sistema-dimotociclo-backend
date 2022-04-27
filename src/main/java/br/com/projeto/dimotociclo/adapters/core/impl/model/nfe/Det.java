@@ -1,16 +1,27 @@
 package br.com.projeto.dimotociclo.adapters.core.impl.model.nfe;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlCData;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@JsonIgnoreProperties(ignoreUnknown = true)
 public class Det {
-  public Prod prod;
+  @JacksonXmlProperty(localName = "prod")
+  @JacksonXmlCData
+  @JacksonXmlElementWrapper(useWrapping = false)
+  public List<Prod> prod;
+
+  @JsonProperty("imposto")
   public Imposto imposto;
-  public String _nItem;
+
+  @JacksonXmlProperty(localName = "nItem")
+  public String nItem;
 }
