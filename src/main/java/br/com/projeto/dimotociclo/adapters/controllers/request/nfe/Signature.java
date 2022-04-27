@@ -13,7 +13,5 @@ public class Signature {
   @JsonIgnoreProperties public SignedInfo signedInfo;
   @JsonIgnoreProperties public String signatureValue;
   @JsonIgnoreProperties public KeyInfo keyInfo;
-
-  @JsonIgnoreProperties("_xmlns")
-  public String _xmlns;
+  @JsonIgnoreProperties public String _xmlns;
 }
