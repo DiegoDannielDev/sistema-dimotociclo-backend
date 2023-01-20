@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @EnableJpaRepositories
-@EntityScan(basePackages = "br.com.projeto.dimotociclo.adapters.jpa.entity")
+@EntityScan(basePackages = "br.com.projeto.dimotociclo.adapters.integration.jpa.entity")
 public class DiMotocicloApplication {
 
   public static void main(String[] args) {
