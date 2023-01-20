@@ -1,0 +1,9 @@
+{
+  "properties": [
+    {
+      "name": "-Djps.track.ap.dependencies",
+      "type": "java.lang.String",
+      "description": "Description for -Djps.track.ap.dependencies."
+    }
+  ]
+}

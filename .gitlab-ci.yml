@@ -1,0 +1,14 @@
+image: ubuntu-2004:202010-01
+
+stages:
+  - build
+
+build:
+  stage: build
+  script:
+    - mvn clean package
+  tags:
+    - mytag
+  only:
+    refs:
+      - dev
