@@ -1,0 +1,25 @@
+spring:
+  profiles:
+    active: local
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+  main:
+    allow-circular-references: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  jackson:
+    date-format: java.text.SimpleDateFormat
+    serialization:
+      write-dates-as-timestamps: true
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd'T'HH:mm:ss.SSSZZ} %magenta([%thread]) %highlight(%-5level) %logger.%M - %green(%msg%n)"
+  level:
+    br.com.projeto.dimotociclo: DEBUG
+server:
+  port: 8082
+  servlet:
+    context-path: /api
