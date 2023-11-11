@@ -31,7 +31,3 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
 
-#    - name: Publish to GitHub Packages Apache Maven
-#      run: mvn deploy -s https://github.com/DiegoDannielDev/sistema-dimotociclo-backend/blob/8ea2cbba09895de23febd4215ae308063185f50f/settings.xml
-#      env:
-#        GITHUB_TOKEN: ${{ github.token }}

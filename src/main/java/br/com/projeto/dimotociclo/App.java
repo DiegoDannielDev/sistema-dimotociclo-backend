@@ -8,9 +8,9 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @SpringBootApplication
 @EnableJpaRepositories
 @EntityScan(basePackages = "br.com.projeto.dimotociclo.adapters.integration.jpa.entity")
-public class DiMotocicloApplication {
+public class App {
 
   public static void main(String[] args) {
-    SpringApplication.run(DiMotocicloApplication.class, args);
+    SpringApplication.run(App.class, args);
   }
 }
