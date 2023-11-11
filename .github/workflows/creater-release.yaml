@@ -1,0 +1,51 @@
+name: Create Release and Update Developer
+
+on:
+  push:
+    branches:
+      - developer
+
+jobs:
+  create_release:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Git
+      run: |
+        git config user.email "actions@github.com"
+        git config user.name "GitHub Actions"
+
+    - name: Create Release
+      run: |
+        version=$(grep "## " CHANGELOG.md | head -n 1 | awk -F' ' '{print $2}')
+        git tag -a $version -m "Release $version"
+        git push origin $version
+
+    - name: Create Release on GitHub
+      uses: softprops/action-gh-release@v1
+      with:
+        files: ""
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  update_developer:
+    runs-on: ubuntu-latest
+    needs: create_release
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Git
+      run: |
+        git config user.email "actions@github.com"
+        git config user.name "GitHub Actions"
+
+    - name: Merge master into developer
+      run: |
+        git checkout developer
+        git merge origin/master
+        git push origin developer
