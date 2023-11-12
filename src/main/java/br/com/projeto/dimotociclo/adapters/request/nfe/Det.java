@@ -13,12 +13,12 @@ import java.util.List;
 @AllArgsConstructor
 @Data
 public class Det {
-  @JsonProperty("prod")
-  public List<Prod> prod;
+    @JsonProperty("prod")
+    public List<Prod> prod;
 
-  @JsonProperty("imposto")
-  public Imposto imposto;
+    @JsonProperty("imposto")
+    public Imposto imposto;
 
-  @JsonIgnoreProperties("_nItem")
-  public String _nItem;
+    @JsonIgnoreProperties("_nItem")
+    public String _nItem;
 }

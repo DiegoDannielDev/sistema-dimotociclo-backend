@@ -9,9 +9,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 public class ICMS {
-  @JsonProperty("ICMS00")
-  public ICMS00 iCMS00;
+    @JsonProperty("ICMS00")
+    public ICMS00 iCMS00;
 
-  @JsonProperty("ICMS20")
-  public ICMS20 iCMS20;
+    @JsonProperty("ICMS20")
+    public ICMS20 iCMS20;
 }

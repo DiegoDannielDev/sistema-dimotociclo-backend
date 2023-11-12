@@ -13,14 +13,14 @@ import java.util.List;
 @Data
 public class Fornecedor {
 
-  private Long codigoFornecedor;
-  private String nome;
-  private String nomeFantasia;
-  private String cpf;
-  private String cnpj;
-  private String tipo;
-  private String situacao;
-  private String endereco;
-  private String cep;
-  private List<String> numerosCtt;
+    private Long codigoFornecedor;
+    private String nome;
+    private String nomeFantasia;
+    private String cpf;
+    private String cnpj;
+    private String tipo;
+    private String situacao;
+    private String endereco;
+    private String cep;
+    private List<String> numerosCtt;
 }

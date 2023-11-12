@@ -11,10 +11,10 @@ import lombok.NoArgsConstructor;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class IPITrib {
-  @JsonProperty("CST")
-  public String cST;
+    @JsonProperty("CST")
+    public String cST;
 
-  public String vBC;
-  public String pIPI;
-  public String vIPI;
+    public String vBC;
+    public String pIPI;
+    public String vIPI;
 }

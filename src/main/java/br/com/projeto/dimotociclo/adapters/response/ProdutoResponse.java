@@ -18,19 +18,19 @@ import lombok.NoArgsConstructor;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class ProdutoResponse {
 
-  @JsonProperty("produto")
-  private ProdutoId produtoId;
+    @JsonProperty("produto")
+    private ProdutoId produtoId;
 
-  @JsonProperty("produto_codigo_barras")
-  private ProdutoCodigoBarrasResponse codigoBarras;
+    @JsonProperty("produto_codigo_barras")
+    private ProdutoCodigoBarrasResponse codigoBarras;
 
-  @JsonProperty("produto_estoque")
-  private EstoqueProdutoResponse estoqueProduto;
+    @JsonProperty("produto_estoque")
+    private EstoqueProdutoResponse estoqueProduto;
 
-  @JsonProperty("produto_valores")
-  private ValoresProdutosResponse valoresProdutos;
+    @JsonProperty("produto_valores")
+    private ValoresProdutosResponse valoresProdutos;
 
-  @JsonProperty("produto_fornecedor")
-  private FornecedorProdutosResponse fornecedorProdutosResponse;
+    @JsonProperty("produto_fornecedor")
+    private FornecedorProdutosResponse fornecedorProdutosResponse;
 
 }

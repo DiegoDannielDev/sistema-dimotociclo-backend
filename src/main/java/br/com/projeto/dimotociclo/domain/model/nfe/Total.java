@@ -11,6 +11,6 @@ import lombok.NoArgsConstructor;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Total {
-  @JsonProperty("ICMSTot")
-  public ICMSTot iCMSTot;
+    @JsonProperty("ICMSTot")
+    public ICMSTot iCMSTot;
 }

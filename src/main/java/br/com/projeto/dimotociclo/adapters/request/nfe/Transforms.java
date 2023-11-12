@@ -13,6 +13,6 @@ import java.util.ArrayList;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Transforms {
-  @JsonProperty("Transform")
-  public ArrayList<Transform> transform;
+    @JsonProperty("Transform")
+    public ArrayList<Transform> transform;
 }

@@ -17,18 +17,18 @@ import java.time.LocalDateTime;
 @JsonNaming(PropertyNamingStrategy.SnakeCaseStrategy.class)
 public class ValoresProdutosResponse {
 
-  private double valorVendaVarejo;
-  private double valorCompra;
-  private double valorCusto;
-  private double margemVendaVarejo;
-  private double valorAtacado;
-  private double margemVendaAtacado;
-  private Double valorCompraProdutoUnitario;
-  private Double valorLucroVendaVarejo;
-  private Double valorLucroVendaAtacadado;
-  @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-  private LocalDateTime dataInclusao;
+    private double valorVendaVarejo;
+    private double valorCompra;
+    private double valorCusto;
+    private double margemVendaVarejo;
+    private double valorAtacado;
+    private double margemVendaAtacado;
+    private Double valorCompraProdutoUnitario;
+    private Double valorLucroVendaVarejo;
+    private Double valorLucroVendaAtacadado;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private LocalDateTime dataInclusao;
 
-  @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-  private LocalDateTime dataAlteracao;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private LocalDateTime dataAlteracao;
 }

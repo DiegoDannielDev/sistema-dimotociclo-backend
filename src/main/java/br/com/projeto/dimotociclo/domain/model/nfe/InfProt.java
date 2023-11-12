@@ -10,12 +10,12 @@ import java.util.Date;
 @AllArgsConstructor
 @Data
 public class InfProt {
-  public String tpAmb;
-  public String verAplic;
-  public String chNFe;
-  public Date dhRecbto;
-  public String nProt;
-  public String digVal;
-  public String cStat;
-  public String xMotivo;
+    public String tpAmb;
+    public String verAplic;
+    public String chNFe;
+    public Date dhRecbto;
+    public String nProt;
+    public String digVal;
+    public String cStat;
+    public String xMotivo;
 }

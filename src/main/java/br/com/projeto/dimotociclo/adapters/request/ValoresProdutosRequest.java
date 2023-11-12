@@ -10,13 +10,13 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Builder
 public class ValoresProdutosRequest {
-  private ProdutoEntradaRequest produtoEntradaRequest;
-  private double valorVendaVarejo;
-  private double valorCompra;
-  private double valorCusto;
-  private double margeVendaVarejo;
-  private double valorAtacado;
-  private double margeVendaAtacado;
-  private LocalDateTime dataInclusao;
-  private LocalDateTime dataAlteracao;
+    private ProdutoEntradaRequest produtoEntradaRequest;
+    private double valorVendaVarejo;
+    private double valorCompra;
+    private double valorCusto;
+    private double margeVendaVarejo;
+    private double valorAtacado;
+    private double margeVendaAtacado;
+    private LocalDateTime dataInclusao;
+    private LocalDateTime dataAlteracao;
 }

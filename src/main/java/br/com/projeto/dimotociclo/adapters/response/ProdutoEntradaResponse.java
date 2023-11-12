@@ -10,19 +10,14 @@ import lombok.NoArgsConstructor;
 @Getter
 public class ProdutoEntradaResponse extends ProdutoId {
 
-  private String codigoBarras;
+    public String referenciaProduto;
+    private String codigoBarras;
+    private String descricaoProduto;
+    private String unidadeMedida;
+    private Long quantidadeEstoque;
+    private Double valorVenda;
 
-  private String descricaoProduto;
+    private Long codigoFornecedor;
 
-  private String unidadeMedida;
-
-  private Long quantidadeEstoque;
-
-  public String referenciaProduto;
-
-  private Double valorVenda;
-
-  private Long codigoFornecedor;
-
-  private String situacaoProduto;
+    private String situacaoProduto;
 }

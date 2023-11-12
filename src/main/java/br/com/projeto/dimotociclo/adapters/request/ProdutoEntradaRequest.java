@@ -14,45 +14,32 @@ import lombok.NoArgsConstructor;
 @JsonNaming(PropertyNamingStrategy.SnakeCaseStrategy.class)
 public class ProdutoEntradaRequest {
 
-  private Long codigoProduto;
+    public String referenciaProduto;
+    public Double margemVendaAtacado;
+    public Double margemVendaVarejo;
+    private Long codigoProduto;
+    private String codigoBarras;
+    private String codigoBarrasInterno;
+    private String descricaoProduto;
+    private String unidadeMedida;
+    private Long quantidadeEstoqueProduto;
+    private Long quantidadeMaximaEstoque;
+    private Long quantidadeMinimaEstoque;
+    private String controleEstoque;
+    private String categoria;
+    private Double valorVendaProduto;
 
-  private String codigoBarras;
+    private Double valorTotalCompra;
 
-  private String codigoBarrasInterno;
+    private Double valorCompraProdutoUnitario;
 
-  private String descricaoProduto;
+    private Long codigoFornecedor;
 
-  private String unidadeMedida;
+    private String produtoMarca;
 
-  private Long quantidadeEstoqueProduto;
+    private String localizacao;
 
-  private Long quantidadeMaximaEstoque;
+    private String urlImagen;
 
-  private Long quantidadeMinimaEstoque;
-
-  private String controleEstoque;
-
-  public String referenciaProduto;
-
-  private String categoria;
-
-  public Double margemVendaAtacado;
-
-  public Double margemVendaVarejo;
-
-  private Double valorVendaProduto;
-
-  private Double valorTotalCompra;
-
-  private Double valorCompraProdutoUnitario;
-
-  private Long codigoFornecedor;
-
-  private String produtoMarca;
-
-  private String localizacao;
-
-  private String urlImagen;
-
-  private String situacaoProduto;
+    private String situacaoProduto;
 }

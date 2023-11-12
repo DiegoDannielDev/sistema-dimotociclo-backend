@@ -10,5 +10,5 @@ import lombok.NoArgsConstructor;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Root {
-  public NfeProc nfeProc;
+    public NfeProc nfeProc;
 }

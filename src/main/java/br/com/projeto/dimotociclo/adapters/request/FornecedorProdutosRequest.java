@@ -11,6 +11,6 @@ import lombok.NoArgsConstructor;
 @Builder
 @Data
 public class FornecedorProdutosRequest {
-  private ProdutoEntradaRequest produtoEntradaRequest;
-  private Fornecedor fornecedores;
+    private ProdutoEntradaRequest produtoEntradaRequest;
+    private Fornecedor fornecedores;
 }

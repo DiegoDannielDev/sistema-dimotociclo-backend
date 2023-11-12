@@ -11,6 +11,6 @@ import lombok.NoArgsConstructor;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class COFINS {
-  @JsonProperty("COFINSAliq")
-  public COFINSAliq cOFINSAliq;
+    @JsonProperty("COFINSAliq")
+    public COFINSAliq cOFINSAliq;
 }

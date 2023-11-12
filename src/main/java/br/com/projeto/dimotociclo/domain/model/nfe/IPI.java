@@ -9,8 +9,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 public class IPI {
-  public String cEnq;
+    public String cEnq;
 
-  @JsonProperty("IPITrib")
-  public IPITrib iPITrib;
+    @JsonProperty("IPITrib")
+    public IPITrib iPITrib;
 }

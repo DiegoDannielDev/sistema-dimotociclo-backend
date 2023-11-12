@@ -10,9 +10,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 public class ProtNFe {
-  @JsonProperty("infProt")
-  public InfProt infProt;
+    @JsonProperty("infProt")
+    public InfProt infProt;
 
-  @JsonIgnoreProperties("_versao")
-  public String _versao;
+    @JsonIgnoreProperties("_versao")
+    public String _versao;
 }

@@ -11,14 +11,14 @@ import lombok.NoArgsConstructor;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Reference {
-  @JsonProperty("Transforms")
-  public Transforms transforms;
+    @JsonProperty("Transforms")
+    public Transforms transforms;
 
-  @JsonProperty("DigestMethod")
-  public DigestMethod digestMethod;
+    @JsonProperty("DigestMethod")
+    public DigestMethod digestMethod;
 
-  @JsonProperty("DigestValue")
-  public String digestValue;
+    @JsonProperty("DigestValue")
+    public String digestValue;
 
-  public String _URI;
+    public String _URI;
 }

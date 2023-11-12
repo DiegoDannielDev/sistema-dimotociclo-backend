@@ -11,8 +11,8 @@ import lombok.NoArgsConstructor;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class IPI {
-  public String cEnq;
+    public String cEnq;
 
-  @JsonProperty("IPITrib")
-  public IPITrib iPITrib;
+    @JsonProperty("IPITrib")
+    public IPITrib iPITrib;
 }

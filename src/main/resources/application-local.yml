@@ -1,8 +1,9 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5433/dimotociclo-db
+    url: jdbc:postgresql://postgres-container:5432/dimotociclo-db
     username: admin
     password: admin
+    driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
       ddl-auto: update
@@ -22,6 +23,6 @@ logging:
   level:
     br.com.projeto.dimotociclo: DEBUG
 server:
-  port: 8082
+  port: 8083
   servlet:
     context-path: /api

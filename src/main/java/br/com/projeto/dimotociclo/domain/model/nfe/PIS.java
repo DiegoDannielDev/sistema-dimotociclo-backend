@@ -11,6 +11,6 @@ import lombok.NoArgsConstructor;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class PIS {
-  @JsonProperty("PISAliq")
-  public PISAliq pISAliq;
+    @JsonProperty("PISAliq")
+    public PISAliq pISAliq;
 }

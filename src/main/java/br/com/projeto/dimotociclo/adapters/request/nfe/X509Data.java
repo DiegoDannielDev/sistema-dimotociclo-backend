@@ -8,6 +8,6 @@ import java.io.Serializable;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class X509Data implements Serializable {
-  @JsonIgnoreProperties("X509Certificate")
-  public String x509Certificate;
+    @JsonIgnoreProperties("X509Certificate")
+    public String x509Certificate;
 }

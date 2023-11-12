@@ -10,5 +10,5 @@ import lombok.NoArgsConstructor;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Pag {
-  public DetPag detPag;
+    public DetPag detPag;
 }

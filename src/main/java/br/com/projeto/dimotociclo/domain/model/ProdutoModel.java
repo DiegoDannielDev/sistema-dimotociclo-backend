@@ -11,14 +11,10 @@ import lombok.NoArgsConstructor;
 @Builder
 public class ProdutoModel {
 
-  private ProdutoId produtoId;
-
-  private ProdutoCodigoBarras codigoBarras;
-
-  private EstoqueProduto estoqueProduto;
-
-  private ValoresProdutos valoresProdutos;
-
-  //  private FornecedorProdutos fornecedorProdutos;
+    private ProdutoId produtoId;
+    private ProdutoCodigoBarras codigoBarras;
+    private EstoqueProduto estoqueProduto;
+    private ValoresProdutos valoresProdutos;
+    //  private FornecedorProdutos fornecedorProdutos;
 
 }

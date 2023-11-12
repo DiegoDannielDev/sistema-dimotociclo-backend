@@ -11,12 +11,14 @@ import lombok.NoArgsConstructor;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class NfeProcRequest {
-  @JsonProperty("NFe")
-  public NFe nFe;
+    @JsonProperty("NFe")
+    public NFe nFe;
 
-  @JsonProperty("protNFe")
-  public ProtNFe protNFe;
+    @JsonProperty("protNFe")
+    public ProtNFe protNFe;
 
-  @JsonIgnoreProperties public String _xmlns;
-  @JsonIgnoreProperties public String _versao;
+    @JsonIgnoreProperties
+    public String _xmlns;
+    @JsonIgnoreProperties
+    public String _versao;
 }

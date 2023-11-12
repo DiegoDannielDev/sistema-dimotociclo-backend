@@ -12,15 +12,17 @@ import java.util.ArrayList;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class InfNFe {
-  public Ide ide;
-  public Emit emit;
-  public Dest dest;
-  public ArrayList<Det> det;
-  public Total total;
-  public Transp transp;
-  public Pag pag;
-  public InfAdic infAdic;
-  public InfRespTec infRespTec;
-  @JsonIgnoreProperties public String _Id;
-  @JsonIgnoreProperties public String _versao;
+    public Ide ide;
+    public Emit emit;
+    public Dest dest;
+    public ArrayList<Det> det;
+    public Total total;
+    public Transp transp;
+    public Pag pag;
+    public InfAdic infAdic;
+    public InfRespTec infRespTec;
+    @JsonIgnoreProperties
+    public String _Id;
+    @JsonIgnoreProperties
+    public String _versao;
 }

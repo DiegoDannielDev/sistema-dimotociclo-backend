@@ -10,5 +10,5 @@ import lombok.NoArgsConstructor;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class InfAdic {
-  public String infCpl;
+    public String infCpl;
 }

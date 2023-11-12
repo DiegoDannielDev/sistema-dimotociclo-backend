@@ -12,12 +12,12 @@ import java.time.LocalDateTime;
 @Builder
 @Data
 public class EstoqueProdutoRequest {
-  private ProdutoEntradaRequest produtoEntradaRequest;
-  private double qtdeEstoque;
-  private double qtdeMaxima;
-  private double qtdeMinima;
-  private String unidadeMedida;
-  private LocalDateTime dataInclusao;
-  private LocalDateTime dataAlteracao;
-  private String produtoInativo;
+    private ProdutoEntradaRequest produtoEntradaRequest;
+    private double qtdeEstoque;
+    private double qtdeMaxima;
+    private double qtdeMinima;
+    private String unidadeMedida;
+    private LocalDateTime dataInclusao;
+    private LocalDateTime dataAlteracao;
+    private String produtoInativo;
 }

@@ -9,8 +9,7 @@ import lombok.*;
 @Builder
 public class AcessoUsuarioTelaModel {
 
-  private Long id;
-  private Boolean isPermissao;
-  private String nomeTela;
-  private Long codigoUsuario;
+    private Boolean isPermissao;
+    private String nomeTela;
+    private Long codigoUsuario;
 }

@@ -16,22 +16,22 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @SwaggerDefinition
 public class SwaggerConfig {
 
-  @Bean
-  Docket productApi() {
-    return new Docket(DocumentationType.SWAGGER_2)
-        .select()
-        .apis(
-            RequestHandlerSelectors.basePackage("br.com.projeto.dimotociclo.adapters.controller"))
-        .paths(PathSelectors.regex("/.*"))
-        .build()
-        .apiInfo(apiInfo());
-  }
+    @Bean
+    Docket productApi() {
+        return new Docket(DocumentationType.SWAGGER_2)
+                .select()
+                .apis(
+                        RequestHandlerSelectors.basePackage("br.com.projeto.dimotociclo.adapters.controller"))
+                .paths(PathSelectors.regex("/.*"))
+                .build()
+                .apiInfo(apiInfo());
+    }
 
-  private ApiInfo apiInfo() {
-    return new ApiInfoBuilder()
-        .termsOfServiceUrl("teste")
-        .title("di-motociclo")
-        .description("api")
-        .build();
-  }
+    private ApiInfo apiInfo() {
+        return new ApiInfoBuilder()
+                .termsOfServiceUrl("teste")
+                .title("di-motociclo")
+                .description("api")
+                .build();
+    }
 }

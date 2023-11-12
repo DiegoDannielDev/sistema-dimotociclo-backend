@@ -16,8 +16,6 @@ import lombok.NoArgsConstructor;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AcessoUsuarioTelaRequest {
 
-  private Long id;
-  private Boolean isPermissao;
-  private String nomeTela;
-  private Long codigoUsuario;
+    private Boolean isPermissao;
+    private String nomeTela;
 }

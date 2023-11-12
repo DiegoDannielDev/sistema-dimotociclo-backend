@@ -11,15 +11,15 @@ import lombok.NoArgsConstructor;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Dest {
-  @JsonProperty("CNPJ")
-  public String cNPJ;
+    @JsonProperty("CNPJ")
+    public String cNPJ;
 
-  public String xNome;
-  public EnderDest enderDest;
-  public String indIEDest;
+    public String xNome;
+    public EnderDest enderDest;
+    public String indIEDest;
 
-  @JsonProperty("IE")
-  public String iE;
+    @JsonProperty("IE")
+    public String iE;
 
-  public String email;
+    public String email;
 }

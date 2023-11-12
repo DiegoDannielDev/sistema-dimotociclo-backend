@@ -11,15 +11,15 @@ import lombok.NoArgsConstructor;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Imposto {
-  @JsonProperty("ICMS")
-  public ICMS iCMS;
+    @JsonProperty("ICMS")
+    public ICMS iCMS;
 
-  @JsonProperty("IPI")
-  public IPI iPI;
+    @JsonProperty("IPI")
+    public IPI iPI;
 
-  @JsonProperty("PIS")
-  public PIS pIS;
+    @JsonProperty("PIS")
+    public PIS pIS;
 
-  @JsonProperty("COFINS")
-  public COFINS cOFINS;
+    @JsonProperty("COFINS")
+    public COFINS cOFINS;
 }

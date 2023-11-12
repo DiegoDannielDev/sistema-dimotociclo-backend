@@ -13,15 +13,15 @@ import java.time.LocalDateTime;
 @Data
 public class EstoqueProduto {
 
-  private Long quantidadeEstoqueProduto;
+    private Long quantidadeEstoqueProduto;
 
-  private Long quantidadeMaximaEstoque;
+    private Long quantidadeMaximaEstoque;
 
-  private Long quantidadeMinimaEstoque;
+    private Long quantidadeMinimaEstoque;
 
-  private String unidadeMedida;
+    private String unidadeMedida;
 
-  private LocalDateTime dataInclusao;
+    private LocalDateTime dataInclusao;
 
-  private LocalDateTime dataAlteracao;
+    private LocalDateTime dataAlteracao;
 }

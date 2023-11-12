@@ -11,15 +11,15 @@ import lombok.NoArgsConstructor;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Emit {
-  @JsonProperty("CNPJ")
-  public String cNPJ;
+    @JsonProperty("CNPJ")
+    public String cNPJ;
 
-  public String xNome;
-  public EnderEmit enderEmit;
+    public String xNome;
+    public EnderEmit enderEmit;
 
-  @JsonProperty("IE")
-  public String iE;
+    @JsonProperty("IE")
+    public String iE;
 
-  @JsonProperty("CRT")
-  public String cRT;
+    @JsonProperty("CRT")
+    public String cRT;
 }

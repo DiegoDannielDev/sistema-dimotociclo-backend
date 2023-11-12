@@ -14,14 +14,14 @@ import java.util.List;
 @AllArgsConstructor
 @Data
 public class Det {
-  @JacksonXmlProperty(localName = "prod")
-  @JacksonXmlCData
-  @JacksonXmlElementWrapper(useWrapping = false)
-  public List<Prod> prod;
+    @JacksonXmlProperty(localName = "prod")
+    @JacksonXmlCData
+    @JacksonXmlElementWrapper(useWrapping = false)
+    public List<Prod> prod;
 
-  @JsonProperty("imposto")
-  public Imposto imposto;
+    @JsonProperty("imposto")
+    public Imposto imposto;
 
-  @JacksonXmlProperty(localName = "nItem")
-  public String nItem;
+    @JacksonXmlProperty(localName = "nItem")
+    public String nItem;
 }

@@ -19,19 +19,19 @@ import java.time.LocalDateTime;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class EstoqueProdutoResponse {
 
-  private Long quantidadeEstoqueProduto;
+    private Long quantidadeEstoqueProduto;
 
-  private Long quantidadeMaximaEstoque;
+    private Long quantidadeMaximaEstoque;
 
-  private Long quantidadeMinimaEstoque;
+    private Long quantidadeMinimaEstoque;
 
-  private String unidadeMedida;
+    private String unidadeMedida;
 
-  @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-  private LocalDateTime dataInclusao;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private LocalDateTime dataInclusao;
 
-  @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-  private LocalDateTime dataAlteracao;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private LocalDateTime dataAlteracao;
 
-  private String produtoInativo;
+    private String produtoInativo;
 }

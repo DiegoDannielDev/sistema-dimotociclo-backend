@@ -12,5 +12,6 @@ import javax.xml.crypto.dsig.keyinfo.X509Data;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class KeyInfo {
-  @JsonIgnoreProperties public X509Data x509Data;
+    @JsonIgnoreProperties
+    public X509Data x509Data;
 }

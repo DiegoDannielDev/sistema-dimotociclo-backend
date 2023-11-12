@@ -14,24 +14,24 @@ import java.util.ArrayList;
 @AllArgsConstructor
 @Data
 public class InfNFe {
-  public Ide ide;
-  public Emit emit;
-  public Dest dest;
+    public Ide ide;
+    public Emit emit;
+    public Dest dest;
 
-  @JacksonXmlProperty(localName = "det")
-  @JacksonXmlCData
-  @JacksonXmlElementWrapper(useWrapping = false)
-  public ArrayList<Det> det;
+    @JacksonXmlProperty(localName = "det")
+    @JacksonXmlCData
+    @JacksonXmlElementWrapper(useWrapping = false)
+    public ArrayList<Det> det;
 
-  public Total total;
-  public Transp transp;
-  public Pag pag;
-  public InfAdic infAdic;
-  public InfRespTec infRespTec;
+    public Total total;
+    public Transp transp;
+    public Pag pag;
+    public InfAdic infAdic;
+    public InfRespTec infRespTec;
 
-  @JsonIgnoreProperties("Id")
-  public String _Id;
+    @JsonIgnoreProperties("Id")
+    public String _Id;
 
-  @JsonIgnoreProperties("versao")
-  public String _versao;
+    @JsonIgnoreProperties("versao")
+    public String _versao;
 }

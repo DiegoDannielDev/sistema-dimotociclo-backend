@@ -11,10 +11,10 @@ import lombok.NoArgsConstructor;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class InfRespTec {
-  @JsonProperty("CNPJ")
-  public String cNPJ;
+    @JsonProperty("CNPJ")
+    public String cNPJ;
 
-  public String xContato;
-  public String email;
-  public String fone;
+    public String xContato;
+    public String email;
+    public String fone;
 }

@@ -11,13 +11,13 @@ import lombok.NoArgsConstructor;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Transporta {
-  @JsonProperty("CNPJ")
-  public String cNPJ;
+    @JsonProperty("CNPJ")
+    public String cNPJ;
 
-  public String xNome;
-  public String xEnder;
-  public String xMun;
+    public String xNome;
+    public String xEnder;
+    public String xMun;
 
-  @JsonProperty("UF")
-  public String uF;
+    @JsonProperty("UF")
+    public String uF;
 }

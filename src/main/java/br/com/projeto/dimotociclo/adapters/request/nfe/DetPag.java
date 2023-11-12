@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class DetPag {
-  public String indPag;
-  public String tPag;
-  public String vPag;
+    public String indPag;
+    public String tPag;
+    public String vPag;
 }

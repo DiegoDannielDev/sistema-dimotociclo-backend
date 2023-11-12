@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Transp {
-  public String modFrete;
-  public Transporta transporta;
-  public Vol vol;
+    public String modFrete;
+    public Transporta transporta;
+    public Vol vol;
 }

@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Data
 public class FornecedorProdutos {
 
-  private Long fornecedores;
+    private Long fornecedores;
 
-  private Long produtoEntity;
+    private Long produtoEntity;
 }

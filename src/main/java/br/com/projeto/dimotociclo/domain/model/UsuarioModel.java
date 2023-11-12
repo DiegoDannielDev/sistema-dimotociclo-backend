@@ -1,5 +1,6 @@
 package br.com.projeto.dimotociclo.domain.model;
 
+import br.com.projeto.dimotociclo.adapters.request.UsuariosRequest;
 import lombok.*;
 
 @NoArgsConstructor
@@ -9,10 +10,13 @@ import lombok.*;
 @Setter
 public class UsuarioModel {
 
-  private Integer codigo;
-  private String nome;
-  private String login;
-  private String senha;
-  private String telefone;
-  private String email;
+    private Integer codigo;
+    private String nome;
+    private String login;
+    private String senha;
+    private String telefone;
+    private String email;
+
+
+
 }

@@ -2,10 +2,13 @@ package br.com.projeto.dimotociclo.port;
 
 import br.com.projeto.dimotociclo.domain.model.AcessoTelaPermissaoModel;
 import br.com.projeto.dimotociclo.domain.model.AcessoUsuarioTelaModel;
+import br.com.projeto.dimotociclo.domain.model.UsuarioAcessosModel;
+
+import java.util.List;
 
 public interface AcessoUsuarioTelaUseCase {
 
-  AcessoUsuarioTelaModel salvarAcesso(AcessoUsuarioTelaModel usuarioTelaModel);
+    void salvarAcesso(UsuarioAcessosModel usuarioTelaModel);
 
-  AcessoTelaPermissaoModel isPermissaoAcesso(String tela, Long codigoUsuario);
+    AcessoTelaPermissaoModel isPermissaoAcesso(String tela, Long codigoUsuario);
 }

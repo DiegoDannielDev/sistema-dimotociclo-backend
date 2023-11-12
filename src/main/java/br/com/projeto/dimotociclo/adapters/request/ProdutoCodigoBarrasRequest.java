@@ -12,9 +12,9 @@ import java.time.LocalDateTime;
 @Data
 @Builder
 public class ProdutoCodigoBarrasRequest {
-  private ProdutoEntradaRequest produtoEntradaRequest;
-  private String codigoBarrasInterno;
-  private String codigoBarrasExterno;
-  private LocalDateTime dataInclusao;
-  private LocalDateTime dataAlteracao;
+    private ProdutoEntradaRequest produtoEntradaRequest;
+    private String codigoBarrasInterno;
+    private String codigoBarrasExterno;
+    private LocalDateTime dataInclusao;
+    private LocalDateTime dataAlteracao;
 }

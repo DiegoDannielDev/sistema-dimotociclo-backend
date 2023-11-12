@@ -11,12 +11,12 @@ import lombok.NoArgsConstructor;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class SignedInfo {
-  @JsonProperty("CanonicalizationMethod")
-  public CanonicalizationMethod canonicalizationMethod;
+    @JsonProperty("CanonicalizationMethod")
+    public CanonicalizationMethod canonicalizationMethod;
 
-  @JsonProperty("SignatureMethod")
-  public SignatureMethod signatureMethod;
+    @JsonProperty("SignatureMethod")
+    public SignatureMethod signatureMethod;
 
-  @JsonProperty("Reference")
-  public Reference reference;
+    @JsonProperty("Reference")
+    public Reference reference;
 }

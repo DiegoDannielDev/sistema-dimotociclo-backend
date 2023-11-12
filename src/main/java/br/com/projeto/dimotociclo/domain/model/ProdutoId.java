@@ -14,11 +14,11 @@ import lombok.NoArgsConstructor;
 @JsonNaming(PropertyNamingStrategy.SnakeCaseStrategy.class)
 public class ProdutoId {
 
-  private Long codigoProduto;
-  private String situacaoProduto;
-  private String descricaoProduto;
-  public String referenciaProduto;
-  private String produtoMarca;
-  private String urlImagen;
-  private String categoria;
+    public String referenciaProduto;
+    private Long codigoProduto;
+    private String situacaoProduto;
+    private String descricaoProduto;
+    private String produtoMarca;
+    private String urlImagen;
+    private String categoria;
 }

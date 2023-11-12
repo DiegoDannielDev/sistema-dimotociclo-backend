@@ -11,10 +11,10 @@ import lombok.NoArgsConstructor;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class NFe {
-  public InfNFe infNFe;
+    public InfNFe infNFe;
 
-  @JsonProperty("Signature")
-  public Signature signature;
+    @JsonProperty("Signature")
+    public Signature signature;
 
-  public String _xmlns;
+    public String _xmlns;
 }

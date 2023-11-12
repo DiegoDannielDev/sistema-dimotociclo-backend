@@ -11,11 +11,11 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Data
 @Builder
-public class ProdutoCodigoBarras  {
+public class ProdutoCodigoBarras {
 
-  private Long codigoProduto;
-  private String codigoBarrasInterno;
-  private String codigoBarrasExterno;
-  private LocalDateTime dataInclusao;
-  private LocalDateTime dataAlteracao;
+    private Long codigoProduto;
+    private String codigoBarrasInterno;
+    private String codigoBarrasExterno;
+    private LocalDateTime dataInclusao;
+    private LocalDateTime dataAlteracao;
 }

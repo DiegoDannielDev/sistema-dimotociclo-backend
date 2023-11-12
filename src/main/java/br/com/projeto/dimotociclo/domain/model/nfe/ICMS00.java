@@ -9,13 +9,13 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 public class ICMS00 {
-  public String orig;
+    public String orig;
 
-  @JsonProperty("CST")
-  public String cST;
+    @JsonProperty("CST")
+    public String cST;
 
-  public String modBC;
-  public String vBC;
-  public String pICMS;
-  public String vICMS;
+    public String modBC;
+    public String vBC;
+    public String pICMS;
+    public String vICMS;
 }

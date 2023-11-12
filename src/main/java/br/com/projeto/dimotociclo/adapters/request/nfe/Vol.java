@@ -10,8 +10,8 @@ import lombok.NoArgsConstructor;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Vol {
-  public String qVol;
-  public String nVol;
-  public String pesoL;
-  public String pesoB;
+    public String qVol;
+    public String nVol;
+    public String pesoL;
+    public String pesoB;
 }

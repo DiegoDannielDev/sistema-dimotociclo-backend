@@ -18,5 +18,5 @@ import java.util.List;
 @JsonNaming(PropertyNamingStrategy.SnakeCaseStrategy.class)
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class FornecedorProdutosResponse {
-  private List<Fornecedor> fornecedores;
+    private List<Fornecedor> fornecedores;
 }

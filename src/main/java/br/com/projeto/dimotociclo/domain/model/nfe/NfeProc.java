@@ -9,15 +9,15 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 public class NfeProc {
-  @JsonProperty("NFe")
-  public NFe nFe;
+    @JsonProperty("NFe")
+    public NFe nFe;
 
-  @JsonProperty("protNFe")
-  public ProtNFe protNFe;
+    @JsonProperty("protNFe")
+    public ProtNFe protNFe;
 
-  @JsonProperty("xmlns")
-  public String _xmlns;
+    @JsonProperty("xmlns")
+    public String _xmlns;
 
-  @JsonProperty("versao")
-  public String _versao;
+    @JsonProperty("versao")
+    public String _versao;
 }

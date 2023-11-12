@@ -11,10 +11,10 @@ import lombok.NoArgsConstructor;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class PISAliq {
-  @JsonProperty("CST")
-  public String cST;
+    @JsonProperty("CST")
+    public String cST;
 
-  public String vBC;
-  public String pPIS;
-  public String vPIS;
+    public String vBC;
+    public String pPIS;
+    public String vPIS;
 }

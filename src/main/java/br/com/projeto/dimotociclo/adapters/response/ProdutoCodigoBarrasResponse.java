@@ -19,10 +19,10 @@ import java.time.LocalDateTime;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class ProdutoCodigoBarrasResponse {
 
-  private String codigoBarrasInterno;
-  private String codigoBarrasExterno;
-  @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-  private LocalDateTime dataInclusao;
-  @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-  private LocalDateTime dataAlteracao;
+    private String codigoBarrasInterno;
+    private String codigoBarrasExterno;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private LocalDateTime dataInclusao;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private LocalDateTime dataAlteracao;
 }

@@ -10,8 +10,12 @@ import lombok.NoArgsConstructor;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Signature {
-  @JsonIgnoreProperties public SignedInfo signedInfo;
-  @JsonIgnoreProperties public String signatureValue;
-  @JsonIgnoreProperties public KeyInfo keyInfo;
-  @JsonIgnoreProperties public String _xmlns;
+    @JsonIgnoreProperties
+    public SignedInfo signedInfo;
+    @JsonIgnoreProperties
+    public String signatureValue;
+    @JsonIgnoreProperties
+    public KeyInfo keyInfo;
+    @JsonIgnoreProperties
+    public String _xmlns;
 }

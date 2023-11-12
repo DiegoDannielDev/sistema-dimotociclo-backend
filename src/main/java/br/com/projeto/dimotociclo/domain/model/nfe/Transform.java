@@ -10,5 +10,5 @@ import lombok.NoArgsConstructor;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Transform {
-  public String _Algorithm;
+    public String _Algorithm;
 }
